@@ -1,0 +1,19 @@
+{
+  "name": "prct01",
+  "version": "1.0.0",
+  "description": "prct01 2 parte asignatura",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-DSI-1920/dsi-p1-parcel-alu0100658705.git"
+  },
+  "author": "pablo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-DSI-1920/dsi-p1-parcel-alu0100658705/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-DSI-1920/dsi-p1-parcel-alu0100658705#readme"
+}
