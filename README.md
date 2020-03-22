@@ -6,8 +6,8 @@
 
 ### Versión NodeJS
 
-![cap01](./images/cap01.png)
+![cap01](images/cap01.png)
 
 ### Configuración fichero .gitignore
 
-![cap02](./images/cap02.png)
+![cap02](images/cap02.png)
