@@ -13,5 +13,6 @@
 .history
 node_modules/
 .npm
+.chache
 
 # End of https://www.gitignore.io/api/visualstudiocode
