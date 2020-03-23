@@ -32,12 +32,22 @@
    - **Plugins para Parcel: Visualiser**
      Instalación con <code>npm install --save-dev parcel-plugin-bundle-visualiser</code> genera un fichero _report.html_ con los tamaños de las dependencias del proyecto.
 
-4) **Scripts de NPM:**
+4. **Scripts de NPM:**
    Se han añadido los siguientes scripts:
 
-- **Se ha añadido la opción _star_ al scrip del proyecto:**
+   ![cap09](src/assets/images/cap09.png)
 
-  ![cap02](src/assets/images/cap02.png)
+- **Se ha añadido la opción _star_ al scrip del proyecto que inicia el servicio:**
+
+  ![cap10](src/assets/images/cap10.png)
+
+- **Se ha añadido la opción _build_ al script del proyecto que construye la aplicación**
+
+  ![cap11](src/assets/images/cap11.png)
+
+- **Se ha añadido la opción _deploy_ que despliaga la aplicación en gh-pages**:
+
+  ![cap12](src/assets/images/cap12.png)
 
 5. **Instala y configura ESLint y Prettier para tu proyecto.**
 
