@@ -12,5 +12,6 @@
 # Ignore all local history of files
 .history
 node_modules/
+.npm
 
 # End of https://www.gitignore.io/api/visualstudiocode

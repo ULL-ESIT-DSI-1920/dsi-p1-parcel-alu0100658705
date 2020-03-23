@@ -1,19 +1,27 @@
-# dsi-p1-parcel-alu0100658705
+## dsi-p1-parcel-alu0100658705
 
 ## Pablo Bethencourt Díaz
 
 ## alu0100658705@ull.edu.es
 
-### Versión NodeJS
+### Práctica 1. Parcel
+
+1. **Entorno de desarollo con una correcta estructura de carpetas**
+
+Trás instalar las distintas herramientas, vemos como queda configurado el proyecto con la siguiente jerarquía de carpetas:
+
+![cap02](src/assets/images/cap02.png)
+
+2. **Uso correcto de <code>Git</code> y de <code>NPM</code>**
+
+- **Versión NodeJS:**
 
 ![cap01](src/assets/images/cap01.png)
 
-##
+- **Configuración fichero .gitignore, se ha hecho uso de la aplicación _gitignore.io_ para generar la base del archivo:**
 
-1. **Entorno de desarollo con una correcta estructura de carpetas**
-2. **Uso correcto de <code>Git</code> y de <code>NPM</code>**
+![cap13](src/assets/images/cap13.png)
 
-- **Configuración fichero .gitignore**
 - **Instalación del paquete "gh-pages" con <code>npm install -D gh-pages</code>**
   ![cap04](src/assets/images/cap04.png)
 
@@ -45,7 +53,7 @@
 
   ![cap11](src/assets/images/cap11.png)
 
-- **Se ha añadido la opción _deploy_ que despliaga la aplicación en gh-pages**:
+- **Se ha añadido la opción _deploy_ que despliaga la aplicación en gh-pages, el comando se ha modificado puesto que daba un error que impedia el despliegue**:
 
   ![cap12](src/assets/images/cap12.png)
 
@@ -73,4 +81,22 @@
 
 1. **Vinilo**
 
+Implementación del vinilo:
+
 2. **Assets con Parcel**
+
+En función del recurso o _asset_ que se quiera importar, **Parcel** ofrece distintas opciones:
+
+- **JavaScript**: Parcel soporta tanto CommonJS como módulos en ES6 para importar archivos. Alguna formas de importar esto archivos son las siguientes:
+
+  - Para CommonJS: Se puede utilizar <code> const dep = require('./path/to/dep') </code>
+  - Para importa un módulo utilizando ES6: <code> import dep from './path/to/dep' </code>
+
+- **CSS**: Pueden ser importados a partir de un archivo JavaScript o HTML, y pueden tener referencias de dependencias utilizando _@import_ así también como referencias a imágenes, fuentes, etc, a través de la función url().
+
+  - Para importar otro archivo css: <code>@import './other.css';</code>
+  - Para hacer referncia a una imagen: <code>url('./images/background.png');</code>
+
+- **HTML**: Los archivos HTML se suelen utilizar como punto de entrada para Parcel. Todos los nombres de archivos deben ser relativos al archivo HTML actual.
+
+  - Ej: <code> <a href="./other.html">Enlace a otra página</a> </code>

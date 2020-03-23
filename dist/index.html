@@ -1,1 +1,251 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><link rel="stylesheet" href="dsi-p1-parcel-alu0100658705/css.adbeff77.css"><script defer src="dsi-p1-parcel-alu0100658705/js.ea31a32c.js"></script></head><body> <div></div> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Practica 1. Parcel</title>
+		<link rel="stylesheet" href="/css.967bad95.css">
+		<script defer="" src="/js.00a46daa.js"></script>
+	<script src="/css.967bad95.js"></script></head>
+	<body>
+		<h2 id="dsi-p1-parcel-alu0100658705">dsi-p1-parcel-alu0100658705</h2>
+		<h2 id="pablo-bethencourt-d-az">Pablo Bethencourt Díaz</h2>
+		<h2 id="alu0100658705-ull-edu-es">alu0100658705@ull.edu.es</h2>
+		<hr>
+		<h2 id="pr-ctica-1-parcel">Práctica 1. Parcel</h2>
+		<ol>
+			<li>
+				<h3>Entorno de desarollo con una correcta estructura de carpetas</h3>
+			</li>
+			<p>
+				Trás instalar las distintas herramientas, vemos como queda configurado
+				el proyecto con la siguiente jerarquía de carpetas:
+			</p>
+			<p><img src="/cap02.acd1c0bc.png" alt="cap02"></p>
+			<li>
+				<p>
+					</p><h3>Uso correcto de Git y de NPM</h3>
+				<p></p>
+            </li>
+        <ul>
+            <li>
+				<p><strong>Versión NodeJS:</strong></p>
+		        <p><img src="/cap01.b11c0795.png" alt="cap01"></p>
+            </li>
+			<li>
+				<strong>Configuración fichero .gitignore, se ha hecho uso de la aplicación
+					<em>gitignore.io</em> para generar la base del archivo:</strong>
+                <p><img src="/cap13.c69ae13e.png" alt="cap13"></p>
+			</li>
+			<li>
+				<p>
+					<strong>Instalación del paquete &quot;gh-pages&quot; con
+						<code>npm install -D gh-pages</code></strong>
+					</p><p><img src="/cap04.db28fedb.png" alt="cap04"></p>
+				<p></p>
+            </li>
+        </ul>
+			<li>
+				<p>
+					</p><h3>Instala Parcel y utilizalo como automatizador.</h3> Para
+					la instalación de <strong>ParcelJS</strong> se ha seleccionado la
+					opción de instalar como proyecto, es decir, se ha realizado mediante
+					el comando <code>npm install -D parcel-bundler</code>, puesto que la
+					instalación global ha dado problemas. Conprobamos la versión
+					instalada, seleccionamos el fichero de entrada y comprobamos que el
+					servicio se inicia correctamente:
+				<p></p>
+				<p><img src="/cap03.a7ebc9c3.png" alt="cap03"></p>
+				<ul>
+					<li>
+						<p>
+							<strong>¿Debes instalarlo como paquete global o como paquete de
+								proyecto?</strong>
+							</p><p>La instalación global resulta más práctica cuando se quiere
+							utilizar <strong>Parcel</strong> en diferentes repositorios sin
+							tener que volver a instalarlo nuevamente para cada proyecto. No
+							obstante, esto no implica necesariamente que se deba instalar de
+							forma global obligatoriamente, la opción de instalación de
+							proyecto presenta la ventaja de que, cuando se realize el
+							<em>npm install</em>, automaticamente se instalarán todos los
+							paquetes y dependencias, sin necesidad de tener que cerciorarnos
+							de que el paquete se encuentra instalado previamente en la
+							máquina. En este caso además, la instalación global ha dado
+							problemas, por lo que para esta práctica se ha utilizado la opción
+							proyecto en vista de solucionar el problema para las prácticas
+							siguientes.</p>
+						<p></p>
+					</li>
+					<li>
+						<p>
+							<strong>¿Si lo instalasemos como paquete de proyecto que debemos tener
+								en cuenta?</strong>
+							</p><p>Tendremos que tener en cuenta que, para nuevos proyectos, será
+							necesario volver a instalar <strong>Parcel</strong>. También es
+							importante considerar que cuando realizos
+							<code>npm install</code> en una nueva máquina, tendremos ya el
+							paquete disponible para su uso. Hay que usar <em>npx</em> antes de
+							ejecutar <strong>Parcel</strong>.</p>
+						<p></p>
+					</li>
+					<li>
+						<p>
+                            <strong>Plugins para Parcel: Visualiser</strong> 
+                            </p><p>Instalación con
+							<code>npm install --save-dev parcel-plugin-bundle-visualiser</code>
+							genera un fichero <em>report.html</em> con los tamaños de las
+                            dependencias del proyecto.</p>
+
+						<p></p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+                    </p><h3>Scripts de NPM:</h3> 
+                    Se han añadido los siguientes scripts:
+				<p></p>
+				<p><img src="/cap09.eb147a03.png" alt="cap09"></p>
+            </li>
+        <ul>
+			<li>
+				<p>
+					<strong>Se ha añadido la opción <em>star</em> al scrip del proyecto que
+						inicia el servicio:</strong>
+				</p>
+				<p><img src="/cap10.09103d71.png" alt="cap10"></p>
+			</li>
+			<li>
+				<p>
+					<strong>Se ha añadido la opción <em>build</em> al script del proyecto que
+						construye la aplicación</strong>
+				</p>
+				<p><img src="/cap11.b25141bd.png" alt="cap11"></p>
+			</li>
+			<li>
+				<p>
+					<strong>Se ha añadido la opción <em>deploy</em> que despliaga la aplicación
+						en gh-pages, el comando se ha modificado puesto que daba un error
+						que impedia el despliegue</strong>:
+				</p>
+				<p><img src="/cap12.9614fb6f.png" alt="cap12"></p>
+			</li>
+        </ul>
+            <li>
+				<p>
+					</p><h3>Instala y configura ESLint y Prettier para tu proyecto.</h3>
+				<p></p>
+            </li>
+        <ul>
+			<li>
+				<p>
+					<strong>ESLint</strong>: Instalación con
+					<code>npm install -D eslint</code> a nivel de proyecto:
+				</p>
+				<p><img src="/cap05.0a4af09d.png" alt="cap05"></p>
+			</li>
+			<li>
+				<p>
+					Configuración de los parámetros e instalación, vemos como se crea el
+					fichero con extensión JSON:
+				</p>
+				<p><img src="/cap06.d18f95ad.png" alt="cap06"></p>
+			</li>
+			<li>
+				<p>Uso de <strong>ESLint</strong> y correción de errores:</p>
+				<p><img src="/cap07.4a9183bd.png" alt="cap07"></p>
+			</li>
+			<li>
+				<p>
+					Creación y modificación de reglas en el fichero
+					<em>.eslintrc.json</em>:
+				</p>
+				<p><img src="/cap08.bc85cbb0.png" alt="cap08"></p>
+            </li>
+            <li>
+				<strong>Prettier</strong>: Instalación y configuración del paquete
+					para evitar conslictos con <strong>ESLint</strong> mediante los
+					comandos <code>npm install -D prettier</code> y
+					<code>npm install -D eslint-config-prettier
+						eslint-plugin-prettier</code>
+            </li>
+        </ul>
+        <br>
+		<h2 id="retos">Retos</h2>
+		<ol>
+			<li><strong>Vinilo</strong></li>
+		
+		<p>Implementación del vinilo:</p>
+		<div class="vinilo">
+			<div class="disco">
+				<div class="anillo a1">
+					<div class="anillo a2">
+						<div class="anillo a3">
+							<div class="interior">
+								<div class="centro"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    
+    <br>
+	
+			<li><strong>Assets con Parcel</strong></li>
+		
+		<p>
+			En función del recurso o <em>asset</em> que se quiera importar,
+			<strong>Parcel</strong> ofrece distintas opciones:
+		</p>
+		<ul>
+			<li>
+				<p>
+					<strong>JavaScript</strong>: Parcel soporta tanto CommonJS como
+					módulos en ES6 para importar archivos. Alguna formas de importar esto
+					archivos son las siguientes:
+				</p>
+				<ul>
+					<li>
+						Para CommonJS: Se puede utilizar
+						<code> const dep = require(&#39;./path/to/dep&#39;) </code>
+					</li>
+					<li>
+						Para importa un módulo utilizando ES6:
+						<code> import dep from &#39;./path/to/dep&#39; </code>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+					<strong>CSS</strong>: Pueden ser importados a partir de un archivo
+					JavaScript o HTML, y pueden tener referencias de dependencias
+					utilizando <em>@import</em> así también como referencias a imágenes,
+					fuentes, etc, a través de la función url().
+				</p>
+				<ul>
+					<li>
+						Para importar otro archivo css:
+						<code>@import &#39;./other.css&#39;;</code>
+					</li>
+					<li>
+						Para hacer referncia a una imagen:
+						<code>url(&#39;./images/background.png&#39;);</code>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+					<strong>HTML</strong>: Los archivos HTML se suelen utilizar como punto
+					de entrada para Parcel. Todos los nombres de archivos deben ser
+					relativos al archivo HTML actual.
+				</p>
+				<ul>
+					<li>
+						Ej: <code> "a href="./other.html">Enlace a otra página" </code>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</ol></ol></body>
+</html>
